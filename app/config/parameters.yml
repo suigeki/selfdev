@@ -2,11 +2,11 @@
 parameters:
     database_host: 127.0.0.1
     database_port: null
-    database_name: symfony
+    database_name: selfdev100db
     database_user: root
-    database_password: null
+    database_password: doudou
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
     mailer_password: null
-    secret: ThisTokenIsNotSoSecretChangeIt
+    secret: fdg785g5t5sq7egg589azviuk61uj5

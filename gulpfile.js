@@ -15,6 +15,7 @@ var options = require('minimist')(process.argv.slice(2));   //Parse les argument
 //Paths
 var resourcesApp = './app/Resources/';
 var resourcesWeb = './src/AppBundle/Resources/';
+var resourcesLABSelfdev = './src/LAB/SelfdevBundle/Resources/'; 
 var sassDir = resourcesWeb+'sass/';
 var modeState = 'dev'; //dev | prod
 
@@ -127,6 +128,13 @@ gulp.task('twigSrcApp', function(){
             ;
 });
 
+//Dès que l'on modifie les fichiers twig dans src/AppBundle/Resources
+gulp.task('twigSrcLABSelfdev', function(){
+    return gulp.src(resourcesLabSelfdev+'views/**/*.twig')
+            .pipe(browserSync.stream())
+            ;
+});
+
 //On récupère toutes les polices
 gulp.task('icons', function(){
     return gulp.src(resourcesWeb+'bower_components/bootstrap-sass/assets/fonts/bootstrap/**.*')
@@ -142,6 +150,7 @@ gulp.task('watch', ['browserSync'], function(){
     //livereload.listen();
     gulp.watch(resourcesApp+'views/**/*.twig',['twigAppRes']);
     gulp.watch(resourcesWeb+'views/**/*.twig',['twigSrcApp']);
+    gulp.watch(resourcesLABSelfdev+'views/**/*.twig',['twigSrcLABSelfdev']);
     gulp.watch([sassDir+'/*.scss', sassDir+'/*.sass'], ['styles']);
     gulp.watch(resourcesWeb+'/views/**/*.html',['html']);
     gulp.watch([

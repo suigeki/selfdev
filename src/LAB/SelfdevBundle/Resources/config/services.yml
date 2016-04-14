@@ -1,0 +1,4 @@
+services:
+#    lab_selfdev.example:
+#        class: LAB\SelfdevBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

@@ -1,0 +1,3 @@
+lab_selfdev_homepage:
+    path:     /
+    defaults: { _controller: LABSelfdevBundle:Default:index }
