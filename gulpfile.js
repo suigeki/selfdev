@@ -19,7 +19,7 @@ var sassDir = resourcesWeb+'sass/';
 var modeState = 'dev'; //dev | prod
 
 //OTHERS
-var appName = 'selfdev1.0.0';
+var pathApp = 'symfony2/selfdev1.0.0';
 
 
 // Static server
@@ -32,7 +32,7 @@ gulp.task('browserSync', function() {
                 baseDir: "./"
             }*/
             //Pour interpréter via un proxy
-            proxy: "http://localhost:8383/"+appName 
+            proxy: "http://localhost:8787/"+pathApp 
         }
     );
    
