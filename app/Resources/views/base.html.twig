@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <h4>Opérationnalité de Bootstrap : <span class="glyphicon glyphicon-thumbs-up"></span></h4>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('js/main.js')}}"></script>
+        {% endblock %}
+    </body>
+</html>

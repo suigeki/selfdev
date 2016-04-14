@@ -1,0 +1,21 @@
+{
+  "name": "selfdev100",
+  "homepage": "https://github.com/suigeki/selfdev",
+  "authors": [
+    "suigeki <cyrille@creosdev.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/AppBundle/Resources/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}

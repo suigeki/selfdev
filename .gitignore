@@ -1,0 +1,43 @@
+# User specific & automatically generated files #
+#################################################
+#/mon/chemin/fichier.php
+#/_monrepertoirecomplet
+#*.mo
+
+# IDE and editor specific files #
+#################################
+/nbproject
+/.git
+
+# Symfony 2.8.4 #
+#################
+
+#Cache
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+
+# Parameters
+#/app/config/parameters.yml
+/app/config/parameters.ini
+
+# Managed by Composer
+#/bin/*
+#/vendor/
+
+# Assets and user uploads
+#/web/bundles/
+#/web/uploads/
+
+# Publiés au besoin donc pas besoin de les versionner #
+#######################################################
+/web/js
+/web/css
+/web/fonts
+
+
+#/.bowerrc
+/src/AppBundle/Resources/bower_components/
+/node_modules/
+

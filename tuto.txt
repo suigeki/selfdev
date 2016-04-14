@@ -1,0 +1,11 @@
+1 - Dans le fichier bower.json
+    "name": "nomapplisansmajuscule",
+    "homepage": "https://github.com/suigeki/nomappligithub",
+2 - bower install
+3 - npm install
+4 - npm install gulp gulp-util gulp-sass browser-sync --save-dev
+5 - npm install gulp-autoprefixer gulp-minify-css gulp-concat --save-dev
+6 - npm install gulp-uglify gulp-minify-html gulp-imagemin del minimist --save-dev
+7 - on attribue le nouveau nom du projet à la variable appName dans gulpfile.js
+8 - On génère les fichiers web par gulp prod --dev
+
